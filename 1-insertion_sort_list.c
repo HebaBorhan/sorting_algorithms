@@ -27,7 +27,7 @@ compare->prev->next = current;
 else
 *list = current;
 compare->prev = current;
-compare = compare->prev->prev;
+compare = current->prev;
 print_list(*list);
 }
 }
