@@ -7,9 +7,8 @@
  * @list: pointer to the first element of the list
  */
 void insertion_sort_list(listint_t **list)
-{ 
+{
 listint_t *current, *temp, *node;
-
 if (*list == NULL || (*list)->next == NULL || list == NULL)
 return;
 for (node = (*list)->next; node != NULL; node = temp)
